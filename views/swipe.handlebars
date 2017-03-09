@@ -9,7 +9,12 @@
 
 // lab9 ixd
 // your code goes here
-
+  $(document).on("pagecreate","#pageone",function(){ 
+  $(“.myphoto”).on("swipe",function(){ 
+     $(this).hide(); 
+  }); 
+});
+  
 </script>
 </head>
 
@@ -26,6 +31,7 @@
     <p class="myphoto">Swipe me away!</p>
     <p class="myphoto">Swipe me too!</p>
   </div>
+
 
   <div data-role="footer">
     <h1>Footer Text</h1>
